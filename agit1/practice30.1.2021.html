@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="practice30.1.2021.css">
+<script>
+$(document).ready(function(){
+    $(".btn2").click(function(){
+        $("#pa00").slideToggle(5000);
+    });
+    });
+
+    $(document).ready(function(){
+    $(".btn1").click(function(){
+        $("#pa00").slideToggle(5000);
+    });
+    });
+
+
+$(document).ready(function(){
+    $(".btn3").click(function(){
+        $(".dev3").animate({
+           marginLeft: "0px",
+            height:"+=20px",
+            width: "+=100px",
+            fontSize:"+=15px"
+        },3000);
+        $(".dev3").click(function(){
+    $(".dev3").stop();
+})
+    });
+});
+
+$(document).ready(function(){
+    $(".btn4").click(function(){
+        $(".dev3").animate({
+            marginLeft:"0px",
+            height:"150px",
+            width:"150px",
+            backgroundColor:"silver" },2000);
+            $(".div3").animate({fontSize:"25px"},3000);
+           
+    });
+});
+$(document).ready(function(){
+    $(".btn6").click(function(){
+        alert("x submit successfully");
+    });
+});
+
+/*$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+});*/
+
+$(document).ready(function(){
+$(".btn7").click(function(){
+alert("HTML:" + $("#nm").html());
+});
+});
+
+$(document).ready(function(){
+    $(".btn8").click(function(){
+        $(".dev8").animate({height:"300px",width:"toggle", backgroundColor:"yellow"});
+    });
+});
+
+
+</script>
+</head>
+<body>
+const text ="textname"
+<button class="btn1">Toggle </button>
+<button class="btn2">Toggle </button>
+
+<p id="pa00"  class="pa1">$(document).ready(function(){
+    $("button").click(function(){
+      $("p").toggle();
+    });
+  });</p>
+<p id="pa0" class="pa2"> below</p>
+<p id="pa1"class="pa2"> below</p>
+<p id="pa2"class="pa2"> below</p>
+
+<button class="btn3">+</button>
+    <button class="btn4">-</button><br>
+<div class="dev3">
+HELLO
+</div>
+<form class="farm1">
+   <label class="lab1">name</label>
+   <input type="text">
+   <button class="btn6">submit</button>
+</form>
+
+<div  id="nm">
+    <button class="btn7">btn7</button>
+    <p><i>hello edison</i></p>
+</div>
+
+<button class="btn8">menu</button>
+<div class="dev8" style="background-color: rgb(139, 122, 122); width: 100px;">home<br>
+                  about<br>
+                  contact<br>
+                  signin<br>
+</div>
+</body>
+</html>
